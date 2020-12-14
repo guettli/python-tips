@@ -1,4 +1,4 @@
-# Opinionated Python Tips
+# Güttli's opinionated Python Tips
 
 # Testing
 
