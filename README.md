@@ -12,7 +12,14 @@ Execute test from your IDE. This way you can jump directly from the nice stacktr
 
 # Web Development
 
-Use Django.
+Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
+
+# Use Virtualenv
+
+Virtualenv is a great tool to get isolated environments. It is very light-weighted and
+I always use it.
+
+I avoid to develop in Docker, virtual machines or Vagrant.
 
 # Related
 
