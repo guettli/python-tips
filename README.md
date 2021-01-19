@@ -48,7 +48,7 @@ for daily development. I want a fast edit/test loop.
 
 # Statistical Profiling
 
-[Statistical Profiling](/guettli/programming-guidelines#statistical-profiler)
+[Statistical Profiling](https://github.com/guettli/programming-guidelines#statistical-profiler)
 
 
 # Related
