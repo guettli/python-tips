@@ -49,6 +49,7 @@ for daily development. I want a fast edit/test loop.
 
 # Related
 
+* [Güttli's opinionated Programming Guidelines](https://github.com/guettli/programming-guidelines)
 * [Güttli's opinionated Django Tips](https://github.com/guettli/django-tips)
 * [Güttli working-out-loud](https://github.com/guettli/wol)
 
