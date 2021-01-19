@@ -46,6 +46,10 @@ for daily development. I want a fast edit/test loop.
 
 > Black makes code review faster by producing the smallest diffs possible. Blackened code looks the same regardless of the project you’re reading. Formatting becomes transparent after a while and you can focus on the content instead.
 
+# Statistical Profiling
+
+[Statistical Profiling](/guettli/programming-guidelines#statistical-profiler)
+
 
 # Related
 
