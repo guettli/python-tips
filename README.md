@@ -17,9 +17,26 @@ Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
 # Use Virtualenv
 
 Virtualenv is a great tool to get isolated environments. It is very light-weighted and
-I always use it.
+I almost always use it.
 
 I avoid to develop in Docker, virtual machines or Vagrant.
+
+If a database is needed, then I usualy set it up on my local machine.
+
+If the application needs a lot of servers (redis, solr, s3, ...) then I set up on
+or server containers to provide the service. Nevertheless during development 
+my code runs directly on
+my local machine, not inside a container or VM.
+
+If the application is a web application (for example with Django), I use **http**
+server (like `manage.py runserver`) and access the application this way. I don't
+set up a https server for development. Serving the application via https is
+only needed for the production environment, not for development.
+
+This way I can easily run and debug my code.
+
+I know that some IDEs have plugins to connect to vagrant/docker/ssh, but I avoid this
+for daily development. I want a fast edit/test loop.
 
 # Automatically format your code: Black
 
