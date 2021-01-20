@@ -10,6 +10,8 @@ Reason: `assert a==b` is far more easy to read and write than `self.assertEqual(
 
 Execute test from your IDE. This way you can jump directly from the nice stacktrace to your beautiful code.
 
+BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you the re-run only the failed tests.
+
 # Web Development
 
 Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
