@@ -48,6 +48,10 @@ for daily development. I want a fast edit/test loop.
 
 > Black makes code review faster by producing the smallest diffs possible. Blackened code looks the same regardless of the project you’re reading. Formatting becomes transparent after a while and you can focus on the content instead.
 
+# Unicode Symbols
+
+Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
+
 # Statistical Profiling
 
 [Statistical Profiling](https://github.com/guettli/programming-guidelines#statistical-profiler)
