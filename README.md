@@ -35,7 +35,7 @@ BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you t
 def test():
     assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)
 ```
-    
+
 # Web Development
 
 Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
@@ -63,6 +63,10 @@ This way I can easily run and debug my code.
 
 I know that some IDEs have plugins to connect to vagrant/docker/ssh, but I avoid this
 for daily development. I want a fast edit/test loop.
+
+# pre-commit.com
+
+[reorder_python_imports](https://github.com/asottile/reorder_python_imports) (instead of isort)
 
 # Automatically format your code: Black
 
