@@ -13,6 +13,18 @@ Execute test from your IDE. This way you can jump directly from the nice stacktr
 
 BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you the re-run only the failed tests.
 
+## pytest-xdist
+
+[pytest-xdist](https://github.com/pytest-dev/pytest-xdist)
+
+> The pytest-xdist plugin extends pytest with some unique test execution modes:
+
+> test run parallelization: if you have multiple CPUs or hosts you can use those for a combined test run. This allows to speed up development or to use special resources of remote machines.
+
+> --looponfail: run your tests repeatedly in a subprocess. After each run pytest waits until a file in your project changes and then re-runs the previously failing tests. This is repeated until all tests pass after which again a full run is performed.
+
+> Multi-Platform coverage: you can specify different Python interpreters or different platforms and run tests in parallel on all of them.
+
 ## Freezegun
 [Freezegun](https://pypi.org/project/freezegun/)
 
