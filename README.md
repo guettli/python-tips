@@ -2,6 +2,7 @@
 
 # Testing
 
+## PyTest
 Use [pytest](https://docs.pytest.org/en/stable/), and if you use Django, then use [pytest-django](https://pytest-django.readthedocs.io/en/latest/).
 
 Reason: `assert a==b` is far more easy to read and write than `self.assertEqual(a, b)`.
@@ -12,6 +13,17 @@ Execute test from your IDE. This way you can jump directly from the nice stacktr
 
 BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you the re-run only the failed tests.
 
+## Freezegun
+[Freezegun](https://pypi.org/project/freezegun/)
+
+> FreezeGun is a library that allows your Python tests to travel through time by mocking the datetime module.
+
+```
+@freeze_time("2012-01-14")
+def test():
+    assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)
+```
+    
 # Web Development
 
 Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
