@@ -49,8 +49,8 @@ I avoid to develop in Docker, virtual machines or Vagrant.
 
 If a database is needed, then I usualy set it up on my local machine.
 
-If the application needs a lot of servers (redis, solr, s3, ...) then I set up on
-or server containers to provide the service. Nevertheless during development 
+If the application needs a lot of servers (redis, solr, s3, ...) then I create 
+containers to provide the service. Nevertheless during development 
 my code runs directly on
 my local machine, not inside a container or VM.
 
