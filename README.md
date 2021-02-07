@@ -36,6 +36,10 @@ def test():
     assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)
 ```
 
+## Type Annotations
+
+For me it feels much more productive to write tests, compared to write type annotations.
+
 # Web Development
 
 Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
