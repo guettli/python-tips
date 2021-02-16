@@ -2,7 +2,7 @@
 
 # How to start?
 
-My recommendation: Buy a book, switch of your PC. Read.
+My recommendation: Buy a book, switch off your PC. Read.
 
 # Avoid
 
