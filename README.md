@@ -1,5 +1,13 @@
 # Güttli's opinionated Python Tips
 
+# How to start?
+
+My recommendation: Buy a book, switch of your PC. Read.
+
+# Avoid
+
+Native GUI (tkinter, gtk, Qt, ...)
+
 # Testing
 
 ## PyTest
