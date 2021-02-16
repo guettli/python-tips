@@ -8,6 +8,10 @@ My recommendation: Buy a book, switch off your PC. Read.
 
 Native GUI (tkinter, gtk, Qt, ...)
 
+# IDE
+
+I like PyCharm. See [My PyCharm Introduction](//github.com/guettli/why-i-like-pycharm)
+
 # Testing
 
 ## PyTest
