@@ -37,6 +37,20 @@ BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you t
 > 
 > Multi-Platform coverage: you can specify different Python interpreters or different platforms and run tests in parallel on all of them.
 
+
+## Output in Tests is cut
+
+The output in tests is often cut, and you want to see the whole data?
+
+You can use a debugger, set a breakpoint and inspect the current state of the local variables.
+
+Or you can help yourself by temporary adding this snippet to your test. This creates a file `/tmp/o`.
+
+```Python
+    with open('/tmp/o', 'wb') as f:
+        f.write(response.content)
+```
+
 ## Freezegun
 [Freezegun](https://pypi.org/project/freezegun/)
 
