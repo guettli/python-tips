@@ -25,6 +25,26 @@ Execute test from your IDE. This way you can jump directly from the nice stacktr
 
 BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you the re-run only the failed tests.
 
+## Directory/File Layout
+
+Concerning tests, I like this layout:
+```
+setup.py
+myapp/utils.py
+myapp/utils_test.py
+myapp/conftest.py
+...
+```
+
+[conftest.py](https://docs.pytest.org/en/latest/writing_plugins.html#conftest-py-plugins) is for configuring pytest.
+
+This layout follows the [LoB (Locality of Behaviour)](https://htmx.org/essays/locality-of-behaviour/) Prinicple. 
+
+I even use a small test which ensures that for every python file, there is a correspondig `..._test.py` file. Of course the is a small exclude list, but
+nevertheless this test helps and reminds me to write tests.
+
+
+
 ## pytest-xdist
 
 [pytest-xdist](https://github.com/pytest-dev/pytest-xdist)
