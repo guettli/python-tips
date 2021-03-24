@@ -57,6 +57,9 @@ nevertheless this test helps and reminds me to write tests.
 > 
 > Multi-Platform coverage: you can specify different Python interpreters or different platforms and run tests in parallel on all of them.
 
+## Coverage
+
+[Coverage](https://coverage.readthedocs.io/) is a handy tool to check if most of your code is tested.
 
 ## Output in Tests is cut
 
