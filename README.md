@@ -139,6 +139,12 @@ Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For ex
 [Eliot](https://github.com/itamarst/eliot) is a loggin/tracing tool which shows you the call tree. It is not an config-free solution. You need to modify your code 
 for creating tracing-events.
 
+Or just use the module [trace](https://docs.python.org/3/library/trace.html):
+
+```
+ python -m trace --trace --ignore-dir=/usr:$VIRTUAL_ENV/lib/ your-script.py
+ ```
+ 
 # Avoid to modify sys.path
 
 Don't fiddle with sys.path or PYTHONPATH. It is not needed, if you use the common patterns.
