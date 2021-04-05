@@ -137,6 +137,8 @@ Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For ex
 
 [Statistical Profiling](https://github.com/guettli/programming-guidelines#statistical-profiler)
 
+[PyInstrument](https://github.com/joerick/pyinstrument)
+
 # Tracing
 
 [Eliot](https://github.com/itamarst/eliot) is a loggin/tracing tool which shows you the call tree. It is not an config-free solution. You need to modify your code 
