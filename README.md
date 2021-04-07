@@ -149,7 +149,13 @@ Or just use the module [trace](https://docs.python.org/3/library/trace.html):
 ```
  python -m trace --trace --ignore-dir=/usr:$VIRTUAL_ENV/lib/ your-script.py
  ```
- 
+
+[viztracer](https://github.com/gaogaotiantian/viztracer)
+
+[hunter](https://github.com/ionelmc/python-hunter)
+
+
+
 # Avoid to modify sys.path
 
 Don't fiddle with sys.path or PYTHONPATH. It is not needed, if you use the common patterns.
