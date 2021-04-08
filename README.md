@@ -150,10 +150,10 @@ Or just use the module [trace](https://docs.python.org/3/library/trace.html):
  python -m trace --trace --ignore-dir=/usr:$VIRTUAL_ENV/lib/ your-script.py
  ```
 
+[hunter](https://github.com/ionelmc/python-hunter) has a cool and simple domain language to filter the lines you want to log.
+
+
 [viztracer](https://github.com/gaogaotiantian/viztracer)
-
-[hunter](https://github.com/ionelmc/python-hunter)
-
 
 
 # Avoid to modify sys.path
