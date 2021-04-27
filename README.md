@@ -117,6 +117,9 @@ This way I can easily run and debug my code.
 I know that some IDEs have plugins to connect to vagrant/docker/ssh, but I avoid this
 for daily development. I want a fast edit/test loop.
 
+See "How do you develop for the cloud?" in [Python Developer Survey](https://www.jetbrains.com/lp/python-developers-survey-2020/): Most
+people develop locally with virtualenv.
+
 # pre-commit.com
 
 [reorder_python_imports](https://github.com/asottile/reorder_python_imports) (instead of isort)
