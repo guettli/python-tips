@@ -25,6 +25,8 @@ Execute test from your IDE. This way you can jump directly from the nice stacktr
 
 BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you the re-run only the failed tests.
 
+[pytest parametrize](https://docs.pytest.org/en/stable/parametrize.html) is handy. It helps you to write concise tests.
+
 ## Directory/File Layout
 
 Concerning tests, I like this layout:
