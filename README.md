@@ -87,6 +87,13 @@ def test():
     assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)
 ```
 
+## Raising an Exception in a mock
+
+You want to raise an excepion in a mock. First solution: do `raise Exception()` in a lambda, since you
+don't want create a new method. Then you realize that this is not possible.
+
+Solution: [Mock.side_effect()](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.side_effect)
+
 ## Type Annotations
 
 For me it feels much more productive to write tests, compared to write type annotations.
