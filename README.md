@@ -96,7 +96,9 @@ Solution: [Mock.side_effect()](https://docs.python.org/3/library/unittest.mock.h
 
 ## Type Annotations
 
-For me it feels much more productive to write tests, compared to write type annotations.
+For me it feels much more productive to write tests, compared to write type annotations. I don't think type 
+annotations are important. They increase the code size, which decreases the readability.
+
 
 # Web Development
 
