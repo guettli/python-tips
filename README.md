@@ -78,16 +78,19 @@ run-mailcap htmlcov/index.html
 
 ## Output in Tests is cut
 
-The output in tests is often cut, and you want to see the whole data?
+The output gets cut by pytest, if it is too long. You want to see the whole data instead of `...`?
 
 You can use a debugger, set a breakpoint and inspect the current state of the local variables.
 
-Or you can help yourself by temporary adding this snippet to your test. This creates a file `/tmp/o`.
+Or you can help yourself by temporary adding this snippet to your test. For example you want to
+see the value of `response.content`. Because the tools like IDE provide so many cool features, it is
+easily forgotten to use the basics. This creates a file `/tmp/o.html`.
 
 ```Python
-    with open('/tmp/o', 'wb') as f:
+    with open('/tmp/o.html', 'wb') as f:
         f.write(response.content)
 ```
+
 
 ## Freezegun
 [Freezegun](https://pypi.org/project/freezegun/)
