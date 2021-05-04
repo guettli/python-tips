@@ -66,8 +66,8 @@ nevertheless this test helps and reminds me to write tests.
 If you have a huge code base, and you only care for a small part, you can do this:
 
 ```
-# run only tests matches this pattern:
-coverage run -m pytest -k job_view
+# run only tests matching this pattern and collect coverage data:
+coverage run -m pytest -k job
 
 # Only create the coverage report for files which match this pattern:
 coverage html --include '*job.py'
