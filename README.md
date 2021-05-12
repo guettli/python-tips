@@ -164,6 +164,16 @@ people develop locally with virtualenv.
 
 Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
 
+# Detect confusable Unicode Characters.
+
+There a many [confusable Unicode characters](https://util.unicode.org/UnicodeJsps/confusables.jsp)
+
+To detect them you can use this:
+```
+>>> 'TEST_DАТА_MANAGEMENT_ACCOUNT'.encode()
+b'TEST_D\xd0\x90\xd0\xa2\xd0\x90_MANAGEMENT_ACCOUNT'
+```
+
 # Statistical Profiling
 
 [Statistical Profiling](https://github.com/guettli/programming-guidelines#statistical-profiler)
