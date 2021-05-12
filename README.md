@@ -173,6 +173,24 @@ To detect them you can use this:
 >>> 'TEST_DАТА_MANAGEMENT_ACCOUNT'.encode()
 b'TEST_D\xd0\x90\xd0\xa2\xd0\x90_MANAGEMENT_ACCOUNT'
 ```
+More details:
+```
+>>> from unicodedata import name
+>>> for char in 'TEST_DАТА_MANAGEMENT_ACCOUNT':
+...     print(name(char))
+... 
+LATIN CAPITAL LETTER T
+LATIN CAPITAL LETTER E
+LATIN CAPITAL LETTER S
+LATIN CAPITAL LETTER T
+LOW LINE
+LATIN CAPITAL LETTER D
+CYRILLIC CAPITAL LETTER A
+CYRILLIC CAPITAL LETTER TE
+CYRILLIC CAPITAL LETTER A
+LOW LINE
+...
+```
 
 # Statistical Profiling
 
