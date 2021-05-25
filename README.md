@@ -76,6 +76,10 @@ coverage html --include '*job.py'
 run-mailcap htmlcov/index.html 
 ```
 
+## Coverage with Context
+
+With [Contexts](https://coverage.readthedocs.io/en/latest/contexts.html) coverage can answer you the question "What test ran this line?"
+
 ## Output in Tests is cut
 
 The output gets cut by pytest, if it is too long. You want to see the whole data instead of `...`?
