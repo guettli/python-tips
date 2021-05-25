@@ -226,6 +226,13 @@ Or just use the module [trace](https://docs.python.org/3/library/trace.html):
 
 Don't fiddle with sys.path or PYTHONPATH. It is not needed, if you use the common patterns.
 
+# Docker
+
+If you use `pip` in a Dockerfile, `pip` downloads files from the internet again and again
+if you build the container several times. The usual cache method does not work.
+
+Here is a solution how to provide a cache to pip running in a Dockerfile: [Using a pip cache directory in docker builds](https://stackoverflow.com/questions/58018300/using-a-pip-cache-directory-in-docker-builds)
+
 # Related
 
 * [Güttli's opinionated Programming Guidelines](https://github.com/guettli/programming-guidelines)
