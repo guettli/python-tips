@@ -76,6 +76,11 @@ coverage html --include '*job.py'
 run-mailcap htmlcov/index.html 
 ```
 
+Let tests fail, if coverage is below PERCENT. I use 85 to 95.
+```
+pytest --cov-fail-under=PERCENT
+```
+
 ## Coverage with Context
 
 With [Contexts](https://coverage.readthedocs.io/en/latest/contexts.html) coverage can answer you the question "What test ran this line?"
