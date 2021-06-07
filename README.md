@@ -221,7 +221,7 @@ Standard library module [trace](https://docs.python.org/3/library/trace.html):
 [hunter](https://github.com/ionelmc/python-hunter) has a cool and simple domain language to filter the lines you want to log.
 
 
-[viztracer](https://github.com/gaogaotiantian/viztracer)
+[viztracer](https://github.com/gaogaotiantian/viztracer). Supports [perfetto](https://perfetto.dev/)
 
 # Async http client
 
