@@ -212,10 +212,7 @@ LOW LINE
 
 # Tracing
 
-[Eliot](https://github.com/itamarst/eliot) is a loggin/tracing tool which shows you the call tree. It is not an config-free solution. You need to modify your code 
-for creating tracing-events.
-
-Or just use the module [trace](https://docs.python.org/3/library/trace.html):
+Standard library module [trace](https://docs.python.org/3/library/trace.html):
 
 ```
  python -m trace --trace --ignore-dir=/usr:$VIRTUAL_ENV/lib/ your-script.py
