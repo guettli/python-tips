@@ -226,6 +226,9 @@ Or just use the module [trace](https://docs.python.org/3/library/trace.html):
 
 [viztracer](https://github.com/gaogaotiantian/viztracer)
 
+# Async http client
+
+I recommend [aiohttp](https://docs.aiohttp.org/en/stable/). Unfortunately there are many old and unmaintained async http solutions. AFAIK aiohttp is the best solution today.
 
 # Avoid to modify sys.path
 
