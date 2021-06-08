@@ -238,6 +238,10 @@ if you build the container several times. The usual cache method does not work.
 
 Here is a solution how to provide a cache to pip running in a Dockerfile: [Using a pip cache directory in docker builds](https://stackoverflow.com/questions/58018300/using-a-pip-cache-directory-in-docker-builds)
 
+# Plugin System
+
+https://pluggy.readthedocs.io/en/latest/
+
 # Related
 
 * [Güttli's opinionated Programming Guidelines](https://github.com/guettli/programming-guidelines)
