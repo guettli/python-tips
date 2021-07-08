@@ -6,7 +6,17 @@ My recommendation: Buy a book, switch off your PC. Read.
 
 # Avoid
 
-Native GUI (tkinter, gtk, Qt, ...)
+Native GUI (tkinter, gtk, Qt, ...).
+
+# After the basics
+
+After you learned the basics of Python learn web development:
+
+* http
+* html
+* css
+
+Javascript is not important. SQL is important.
 
 # IDE
 
