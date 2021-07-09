@@ -214,6 +214,10 @@ LOW LINE
 ...
 ```
 
+# HTML sanitizing library
+
+[bleach](https://github.com/mozilla/bleach)
+
 # Statistical Profiling
 
 [Statistical Profiling](https://github.com/guettli/programming-guidelines#statistical-profiler)
