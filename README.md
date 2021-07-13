@@ -218,6 +218,10 @@ LOW LINE
 
 [bleach](https://github.com/mozilla/bleach)
 
+# Parsing and Changing HTML
+
+BeautifulSoup, which supports CSS Selectors via [SoupSieve](https://beautiful-soup-4.readthedocs.io/en/latest/index.html#css-selectors)
+
 # Statistical Profiling
 
 [Statistical Profiling](https://github.com/guettli/programming-guidelines#statistical-profiler)
