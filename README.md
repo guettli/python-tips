@@ -207,6 +207,10 @@ several times.
 In general: a list is stateless, an interator is stateful. In most cases the stateless solution
 is simpler and more mature.
 
+If you need to long list of items, and handling all data in memory does not work any more, then it
+is maybe time to use a [Task Queue](https://www.fullstackpython.com/task-queues.html). This way you 
+can split your work into small tasks. This gives you much more power than an iterator.
+
 # Unicode Symbols
 
 Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
