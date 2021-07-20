@@ -4,6 +4,8 @@
 
 If you are new to Python or to programmming, then my recommendation: Buy a book, switch off your PC. Read.
 
+After you learned the basics, this text might help you.
+
 # Avoid
 
 Avoid native GUIs (tkinter, gtk, Qt, ...). Or native mobile apps.
