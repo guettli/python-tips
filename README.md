@@ -225,6 +225,9 @@ If you need to long list of items, and handling all data in memory does not work
 is maybe time to use a [Task Queue](https://www.fullstackpython.com/task-queues.html). This way you 
 can split your work into small tasks. This gives you much more power than an iterator.
 
+Finally there are two kind of happy developers: Some are happy because they know fancy methods like [more_itertools.spy()](https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.spy) and some developers are happy because they don't need to these fancy methods.
+
+
 # Unicode Symbols
 
 Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
