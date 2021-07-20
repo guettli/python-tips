@@ -211,9 +211,11 @@ is simpler and more mature.
 
 Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
 
-# classmethod vs staticmethod
+# I like classmethod
 
 My rule of thumb: If a method of a class does not need the variable "self", then I use `@classmethod`. I never use `@staticmethod`.
+
+This makes my life easier (reduces cognitive load), since I don't need to think about "a vs b".
 
 Related article: https://medium.com/school-of-code/classmethod-vs-staticmethod-in-python-8fe63efb1797
 
