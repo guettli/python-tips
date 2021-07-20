@@ -2,7 +2,7 @@
 
 # How to start?
 
-My recommendation: Buy a book, switch off your PC. Read.
+If you are new to Python or to programmming, then my recommendation: Buy a book, switch off your PC. Read.
 
 # Avoid
 
