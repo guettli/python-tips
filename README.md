@@ -6,7 +6,9 @@ My recommendation: Buy a book, switch off your PC. Read.
 
 # Avoid
 
-Avoid native GUIs (tkinter, gtk, Qt, ...).
+Avoid native GUIs (tkinter, gtk, Qt, ...). Or native mobile apps.
+
+If you need a GUI, then use HTML.
 
 # After the basics
 
