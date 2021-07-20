@@ -142,6 +142,18 @@ This increases the cognitive load. With other words type annotations sometimes d
 
 Use Django. Related [Django-Tips](//github.com/guettli/django-tips)
 
+# Avoid "as" imports
+
+Example:
+
+```
+import datetime as dt
+```
+
+That's possible, but it is confusing. I don't recommend this. If you can type with ten fingers,
+then typing "datetime" is fast.
+
+
 # Use Virtualenv
 
 Virtualenv is a great tool to get isolated environments. It is very light-weighted and
