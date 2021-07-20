@@ -184,6 +184,29 @@ people develop locally with virtualenv.
 
 I use `black -S`. The `-S` options: Don't normalize string quotes or prefixes.
 
+# Iterators are overrated
+
+For me this code is perfectly fine:
+
+```
+def my_method(...):
+    ret = []
+    for foo in ...:
+        if ...:
+            continue
+        ...
+        ret.append(...)
+    return ret
+```
+
+Of course I could return an iterator instead of plain and boring list. But what do I gain?
+
+I think iterators make things more complicated. One reason for this: You can't loop over the iterator
+several times.
+
+In general: a list is stateless, an interator is stateful. In most cases the stateless solution
+is simpler and more mature.
+
 # Unicode Symbols
 
 Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
