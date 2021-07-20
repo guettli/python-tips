@@ -186,6 +186,12 @@ I use `black -S`. The `-S` options: Don't normalize string quotes or prefixes.
 
 Often you can avoid fancy SVG/PNG icons. You can use the unicode symbols: For example `\N{Lock}` 🔒
 
+# classmethod vs staticmethod
+
+My rule of thumb: If a method of a class does not need the variable "self", then I use `@classmethod`. I never use `@staticmethod`.
+
+Related article: https://medium.com/school-of-code/classmethod-vs-staticmethod-in-python-8fe63efb1797
+
 # Detect confusable Unicode Characters.
 
 There a many [confusable Unicode characters](https://util.unicode.org/UnicodeJsps/confusables.jsp)
