@@ -198,6 +198,11 @@ people develop locally with virtualenv.
 
 I use `black -S`. The `-S` options: Don't normalize string quotes or prefixes.
 
+and https://github.com/asottile/pyupgrade
+
+and https://github.com/asottile/reorder_python_imports
+
+
 # Iterators are overrated
 
 For me this code is perfectly fine:
