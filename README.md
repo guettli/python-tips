@@ -73,6 +73,22 @@ nevertheless this test helps and reminds me to write tests.
 > 
 > Multi-Platform coverage: you can specify different Python interpreters or different platforms and run tests in parallel on all of them.
 
+## pytest cuts your output
+
+Sometimes pytests cuts your output, and you don't see what you want to see.
+
+One way to work around this: Write your data to a temporary file:
+
+```
+    with open('/tmp/x', 'wt') as fd:
+        fd.write(json.dumps(data, indent=2))
+    assert 0
+```
+
+Run your test and then inspect the file `/tmp/x`.
+
+But only add this snippet temporarily, since this is vulnurable to a [symlink race](https://en.wikipedia.org/wiki/Symlink_race)
+
 ## Coverage
 
 [Coverage](https://coverage.readthedocs.io/) is a handy tool to check if most of your code is tested.
