@@ -337,6 +337,13 @@ Here is a solution how to provide a cache to pip running in a Dockerfile: [Using
 
 https://pluggy.readthedocs.io/en/latest/
 
+# Poetry vs Pipenv vs pip-tools
+
+It looks like Poetry has won: http://sotagtrends.com/?tags=python-poetry+pipenv
+
+Up to now I manage my dependencies by hand in setup.cfg. But I will try Poetry sooner or later.
+
+
 # Related
 
 * [Güttli's opinionated Programming Guidelines](https://github.com/guettli/programming-guidelines)
