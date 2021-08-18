@@ -303,6 +303,12 @@ BeautifulSoup, which supports CSS Selectors via [SoupSieve](https://beautiful-so
 
 [PyInstrument](https://github.com/joerick/pyinstrument)
 
+# Packaging 
+
+Please follow the official and maintained guide: [Packaging Projects](https://packaging.python.org/tutorials/packaging-projects/)
+
+If you use google to find a packaging guide, then you might read outdated and not maintained blog articles.
+
 # Tracing
 
 Standard library module [trace](https://docs.python.org/3/library/trace.html):
