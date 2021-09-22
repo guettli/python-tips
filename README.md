@@ -29,9 +29,15 @@ I like PyCharm. See [My PyCharm Introduction](//github.com/guettli/why-i-like-py
 # Testing
 
 ## PyTest
+
 Use [pytest](https://docs.pytest.org/en/stable/), and if you use Django, then use [pytest-django](https://pytest-django.readthedocs.io/en/latest/).
 
-Reason: `assert a==b` is far more easy to read and write than `self.assertEqual(a, b)`.
+Reasons: 
+
+* `assert a == b` is far more easy to read and write than `self.assertEqual(a, b)`.
+* If your assertion fails, pytest will show you the values. Example: `assert a == b` fails. Then pytest will show you the value of `a` and `b`. 
+* The fixture system is really great.
+* You can avoid TestCase classes. A simple method starting with `def test_...()` is enough.
 
 `pytest -k keyword` is very handy. Just a keyword (or some characters) which are part of the filename or test-function, and only the functions containing this string will get called.
 
