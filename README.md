@@ -36,7 +36,7 @@ Reasons:
 
 * `assert a == b` is far more easy to read and write than `self.assertEqual(a, b)`.
 * If your assertion fails, pytest will show you the values. Example: `assert a == b` fails. Then pytest will show you the value of `a` and `b`. 
-* The fixture system is really great.
+* The fixture system is really great. This is much more flexible than `setUp()`. In the old unittest `setUp()` method you tend to create things you finally don't need for all tests. This makes the inner edit-test feedbackloop slower.
 * You can avoid TestCase classes. A simple method starting with `def test_...()` is enough.
 
 `pytest -k keyword` is very handy. Just a keyword (or some characters) which are part of the filename or test-function, and only the functions containing this string will get called.
