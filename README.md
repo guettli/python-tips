@@ -254,6 +254,24 @@ can split your work into small tasks. This gives you much more power than an ite
 
 Finally there are two kind of happy developers: Some are happy because they know fancy methods like [more_itertools.spy()](https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.spy) and some developers are happy because they don't need to these fancy methods.
 
+# Avoid map(), filter() and reduce()
+
+Use list- or dict-comprehension instead.
+
+```
+# Example List-Comprehension: Remove items from list where are 0:
+
+old_list = [0, 1, 2, 3, 4, 5, 0]
+new_list = [item for item in old_list if item != 0]
+```
+
+```
+# Example: Dict-Comprehension: Remove values which are not True:
+
+old_dict = {'foo': 1, 'bar': 2, 'empty': 0}
+new_dict = {k:v for k, v in old_dict.items() if v}
+```
+
 
 # Unicode Symbols
 
