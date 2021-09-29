@@ -47,6 +47,17 @@ BTW, [pytest caching](https://docs.pytest.org/en/stable/cache.html) allows you t
 
 [pytest parametrize](https://docs.pytest.org/en/stable/parametrize.html) is handy. It helps you to write concise tests.
 
+## TestCase.setUp() should not be used
+
+This tip applies, if you have not switched to pytest fixtures yet.
+
+The method [TestCase.setUp()](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) gets called for **every** test of this TestCase.
+
+Avoid this method. It is very likely that you just waste time since things get done in this method which is not needed for every test of this TestCase.
+
+If possible, please switch to pytest fixtures.
+
+
 ## Directory/File Layout
 
 Concerning tests, I like this layout:
