@@ -57,6 +57,8 @@ Avoid this method. It is very likely that you just waste time since things get d
 
 If possible, please switch to pytest fixtures.
 
+I have seen code where the setUp() method of a class called `MinimalFooTestCase` was 660 lines long.
+This slows down tests, since most test methods of this class don't need all the stuff that gets created during setUp(). Remember that setUp() gets called before every test__method(). So 660 lines get executed before every test_method().
 
 ## Directory/File Layout
 
