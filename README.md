@@ -285,6 +285,24 @@ old_dict = {'foo': 1, 'bar': 2, 'empty': 0}
 new_dict = {k:v for k, v in old_dict.items() if v}
 ```
 
+# functools.partials()
+
+[functools.partial()](https://docs.python.org/3/library/functools.html#functools.partial) is cool.
+
+You can create new methods which get additional arguments.
+
+In this example we needed to provide an old interface after refactoring. We remove a lot of code
+by creating a general method `my_getter()`:
+
+```
+def my_getter(foo, bar, my_model):
+    ...
+    
+for foo in ...:
+    for bar in ...:
+        setattr(MyModel, foo + '_' + bar, property(functools.partial(my_getter, foo, bar)))
+```        
+
 
 # Unicode Symbols
 
