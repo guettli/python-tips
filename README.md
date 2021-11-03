@@ -231,7 +231,7 @@ people develop locally with virtualenv.
 > Black makes code review faster by producing the smallest diffs possible. Blackened code looks the same regardless of the project you’re reading. Formatting becomes transparent after a while and you can focus on the content instead.
 
 
-I use `black -S`. The `-S` options: Don't normalize string quotes or prefixes.
+I use `black -S`. The `-S` options: Don't normalize string quotes or prefixes. Related [Black Docs "Strings"](https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html?highlight=quotes#strings). I prefer single quotes, since they are easier to type.
 
 and https://github.com/asottile/pyupgrade
 
