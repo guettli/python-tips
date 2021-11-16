@@ -168,6 +168,29 @@ don't want create a new method. Then you realize that this is not possible.
 
 Solution: [Mock.side_effect()](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.side_effect)
 
+## Mocking works locally, but not in CI?
+
+Mocking in Python exchanges a name. If you patch `foo.utils.my_method`, this might work if you use `from foo.utils import my_method`.
+It depends which code was run first. If your call to `mock.path()` was called before `from foo.utils import my_method`, then it works.
+But if the import happends before the `patch()`, then it does not work.
+
+This means you test works locally, but in CI the test might fail because in CI the import happened in a previous test.
+
+Imagine you import and use `my_method()` in `caller.py`. The you can patch like this `mock.patch('caller.my_method`, ...)`.
+
+If you test calls `my_method()` several times from different files, then this won't help. The you need to patch the internals of `my_method()` to return the desired result. 
+
+Your options:
+
+* use `utils.my_method()` instead of `my_method()`. Not nice.
+* Refactor the implementation of `my_method()` so that you patch something inside it, so that it returns the desired result. Not nice.
+* Patch all places which use `my_method()` during your test. Not nice.
+
+Up to now I know no nice way to solve this.
+
+See [Python Docs "Where to patch?"](https://docs.python.org/3/library/unittest.mock.html#where-to-patch)
+
+
 ## Type Annotations
 
 For me it feels much more productive to write tests, compared to write type annotations. I don't think type 
