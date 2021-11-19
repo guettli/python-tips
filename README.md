@@ -427,6 +427,13 @@ It looks like Poetry has won: http://sotagtrends.com/?tags=python-poetry+pipenv
 
 Up to now I manage my dependencies by hand in setup.cfg. But I will try Poetry sooner or later.
 
+# Using Python versions, which are not available for your operating system
+
+If you want to test your software on a Python version which is not available for your
+operating system, you can use [pyenv](https://github.com/pyenv/pyenv) to get the right version.
+
+Example: You are running Ubuntu 20.04 which ships with Python 3.8, but you want to test your code
+with Python 3.10.
 
 # Related
 
