@@ -245,7 +245,7 @@ people develop locally with virtualenv.
 
 [reorder_python_imports](https://github.com/asottile/reorder_python_imports) (instead of isort)
 
-# Automatically format your code: Black
+# Automatically format your code
 
 [Black](https://black.readthedocs.io/en/stable/):
 
@@ -256,14 +256,15 @@ people develop locally with virtualenv.
 
 I use `black -S`. The `-S` options: Don't normalize string quotes or prefixes. Related [Black Docs "Strings"](https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html?highlight=quotes#strings). I prefer single quotes, since they are easier to type.
 
-and https://github.com/asottile/pyupgrade
-
-and https://github.com/asottile/reorder_python_imports
 
 But if you prefer single quotes to double quotes and a way to configure the process, then [blue](https://blue.readthedocs.io/en/latest/) might your tool.
 
 Related: [darker](https://github.com/akaihola/darker)
 > Apply black reformatting to Python files only in regions changed since a given commit. 
+
+Related https://github.com/asottile/pyupgrade
+
+Related https://github.com/asottile/reorder_python_imports
 
 
 # Iterators are overrated
