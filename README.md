@@ -262,6 +262,10 @@ and https://github.com/asottile/reorder_python_imports
 
 But if you prefer single quotes to double quotes and a way to configure the process, then [blue](https://blue.readthedocs.io/en/latest/) might your tool.
 
+Related: [darker](https://github.com/akaihola/darker)
+> Apply black reformatting to Python files only in regions changed since a given commit. 
+
+
 # Iterators are overrated
 
 For me this code is perfectly fine:
