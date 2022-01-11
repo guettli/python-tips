@@ -260,6 +260,7 @@ and https://github.com/asottile/pyupgrade
 
 and https://github.com/asottile/reorder_python_imports
 
+But if you prefer single quotes to double quotes and a way to configure the process, then [blue](https://blue.readthedocs.io/en/latest/) might your tool.
 
 # Iterators are overrated
 
