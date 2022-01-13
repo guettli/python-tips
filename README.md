@@ -429,11 +429,7 @@ https://pluggy.readthedocs.io/en/latest/
 
 # Poetry vs Pipenv vs pip-tools vs PDM
 
-It looks like Poetry has won: http://sotagtrends.com/?tags=python-poetry+pipenv
-
-PDM: https://pdm.fming.dev/
-
-If unsure take pip-tools.
+If unsure take pip. If you need more take pip-tools.
 
 # Using Python versions, which are not available for your operating system
 
