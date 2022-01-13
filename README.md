@@ -427,7 +427,7 @@ Here is a solution how to provide a cache to pip running in a Dockerfile: [Using
 
 https://pluggy.readthedocs.io/en/latest/
 
-# Poetry vs Pipenv vs pip-tools vs PDM
+# Poetry vs Pipenv vs pip-tools
 
 If unsure take pip. If you need more take pip-tools.
 
