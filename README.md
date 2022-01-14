@@ -387,6 +387,18 @@ BeautifulSoup, which supports CSS Selectors via [SoupSieve](https://beautiful-so
 
 [PyInstrument](https://github.com/joerick/pyinstrument)
 
+# pathlib
+
+[pathlib](https://docs.python.org/3/library/pathlib.html) offers classes representing filesystem paths with semantics appropriate for different operating systems.
+
+I don't use it.
+
+Lately I don't play around with file paths that much.
+
+In the past it was different. But dealing with files is becoming less and less important to me (and in general).
+
+I store data in a database, not in files. 
+
 # Packaging 
 
 Please follow the official and maintained guide: [Packaging Projects](https://packaging.python.org/tutorials/packaging-projects/)
