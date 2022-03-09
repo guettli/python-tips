@@ -422,6 +422,8 @@ Time Travel Debugging [PyTrace](https://github.com/gleb-sevruk/pycrunch-trace)
 
 [PySnooper](https://github.com/cool-RR/PySnooper) Like `set -x` in the Bash Shell.
 
+[Tracing Python Code with settrace](https://github.com/guettli/tracing-python-code)
+
 # Async http client
 
 I recommend [aiohttp](https://docs.aiohttp.org/en/stable/). Unfortunately there are many old and unmaintained async http solutions. AFAIK aiohttp is the best solution today.
