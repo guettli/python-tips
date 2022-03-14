@@ -420,7 +420,7 @@ Standard library module [trace](https://docs.python.org/3/library/trace.html):
 
 Time Travel Debugging [PyTrace](https://github.com/gleb-sevruk/pycrunch-trace)
 
-[PySnooper](https://github.com/cool-RR/PySnooper) Like `set -x` in the Bash Shell.
+[PySnooper](https://github.com/cool-RR/PySnooper) Like `set -x` in the Bash Shell. Or [snoop](https://github.com/alexmojaki/snoop)
 
 [Tracing Python Code with settrace](https://github.com/guettli/tracing-python-code)
 
