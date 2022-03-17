@@ -332,6 +332,14 @@ for foo in ...:
         setattr(MyModel, foo + '_' + bar, property(functools.partial(my_getter, foo, bar)))
 ```        
 
+# Don't use tox during your inner dev loop.
+
+I think tox is a tool which should get used during CI.
+
+During your inner dev loop (edit, test, edit, test, ...) I think the additional virtualenv in `.tox` confuses
+more than it brings you value.
+
+
 
 # Unicode Symbols
 
