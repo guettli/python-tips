@@ -228,6 +228,10 @@ containers to provide the service. Nevertheless during development
 my code runs directly on
 my local machine, not inside a container or VM.
 
+This keeps the inner dev loop of edit-run-test fast.
+
+If your desktop operating system is Windows, then you it might make sense to get Linux via WSL or VirtualBox.
+
 If the application is a web application (for example with Django), I use **http**
 server (like `manage.py runserver`) and access the application this way. I don't
 set up a https server for development. Serving the application via https is
