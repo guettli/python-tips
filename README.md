@@ -60,6 +60,22 @@ If possible, please switch to pytest fixtures.
 I have seen code where the setUp() method of a class called `MinimalFooTestCase` was 660 lines long.
 This slows down tests, since most test methods of this class don't need all the stuff that gets created during setUp(). Remember that setUp() gets called before every test__method(). So 660 lines get executed before every test_method().
 
+## arrange/act/assert pattern
+
+[Arrange-Act-Assert Pattern](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)
+
+```
+def test_foo():
+    # arrange
+    obj = ...
+    
+    # act
+    foo(obj)
+    
+    # assert
+    assert obj.bar == baz
+```
+
 ## Directory/File Layout
 
 Concerning tests, I like this layout:
