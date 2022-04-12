@@ -452,6 +452,35 @@ Time Travel Debugging [PyTrace](https://github.com/gleb-sevruk/pycrunch-trace)
 
 [Tracing Python Code with settrace](https://github.com/guettli/tracing-python-code)
 
+# Stacktraces are beautiful
+
+I have seen code, where the developer tried to provide a simple error message without a stracktrace:
+
+```
+if not os.path.exists(some_file):
+    print(f'{some_file} does not exist.')
+    sys.exit(1)
+with open(some_file) as f:
+    ...
+```
+
+Most people will prefer this short message to a traceback.
+
+If you get an error message like "foo.yaml does not exist", and you are responsible for fixing this,
+then you love stracktraces. Imagine the code contains 8 places where the above error messages gets created, then
+things are getting complicated. Which place created the error message?
+
+With a stacktrace a developer can find the root cause much easier.
+
+My point of view: embrace stacktraces. Their are beautiful, since they help you fix issues.
+
+Side effect: Less code. In above example the first three lines (`if ... sys.exit(1)`) are not needed. The
+`open()` call will raise an exception if the file is missing.
+
+Of course it depends on the use-case. If it is very likely that the file exists, then above way is ok.
+
+If it is likely that the file does not exist, then it might make sense to provide a short message and abort.
+
 # Async http client
 
 I recommend [aiohttp](https://docs.aiohttp.org/en/stable/). Unfortunately there are many old and unmaintained async http solutions. AFAIK aiohttp is the best solution today.
