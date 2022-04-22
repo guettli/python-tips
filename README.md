@@ -8,7 +8,7 @@ After you learned the basics, this text might help you.
 
 # Avoid
 
-Avoid native GUIs (tkinter, gtk, Qt, ...). Or native mobile apps.
+Avoid to write native GUIs (tkinter, gtk, Qt, ...) or native mobile apps.
 
 If you need a GUI, then use HTML.
 
@@ -511,6 +511,12 @@ operating system, you can use [pyenv](https://github.com/pyenv/pyenv) to get the
 
 Example: You are running Ubuntu 20.04 which ships with Python 3.8, but you want to test your code
 with Python 3.10.
+
+# Drawbacks
+
+Python is not made for hyperscaling. It uses too much ressources. You can server several hundret http requests per second, but if 
+you need to server several thousand requests per second, then you might get troubles. But who cares? If your product is very successful
+you can hire developers to rewrite critical parts in a more performant language.
 
 # Related
 
