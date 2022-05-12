@@ -512,11 +512,29 @@ operating system, you can use [pyenv](https://github.com/pyenv/pyenv) to get the
 Example: You are running Ubuntu 20.04 which ships with Python 3.8, but you want to test your code
 with Python 3.10.
 
-# Drawbacks
+## Drawbacks
+
+# Not as fast as C/Golang/Rust
 
 Python is not made for hyperscaling. It uses too much ressources. You can server several hundret http requests per second, but if 
 you need to server several thousand requests per second, then you might get troubles. But who cares? If your product is very successful
 you can hire developers to rewrite critical parts in a more performant language.
+
+# Magic underscore to dash replacement
+
+Somewhere underscores get changed to dashes, if you install with `pip install -e ...`.
+
+I want to automate stuff. I want repo "foo_bar" to be  in `src/foo_bar`, not `src/foo-bar`.
+
+Related [pip -e: magic underscore to dash replacement](https://stackoverflow.com/questions/19097057/pip-e-no-magic-underscore-to-dash-replacement?noredirect=1#comment127580063_19097057)
+
+# No TemplateLiterals (like in JS)
+
+...
+
+# No auto-escaping html templates in stdlib
+
+Go has a very powerful html templates: [html/template](https://pkg.go.dev/html/template)
 
 # Related
 
