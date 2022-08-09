@@ -536,6 +536,17 @@ Related [pip -e: magic underscore to dash replacement](https://stackoverflow.com
 
 Go has a very powerful html templates: [html/template](https://pkg.go.dev/html/template)
 
+# Don't use `random.seed()`
+
+use 
+
+```
+my_random = random.Random()
+my_random.seed(...)
+```
+
+This way, you don't rely on global state.
+
 # Related
 
 * [Güttli's opinionated Programming Guidelines](https://github.com/guettli/programming-guidelines)
