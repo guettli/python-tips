@@ -528,6 +528,8 @@ I want to automate stuff. I want repo "foo_bar" to be  in `src/foo_bar`, not `sr
 
 Related [pip -e: magic underscore to dash replacement](https://stackoverflow.com/questions/19097057/pip-e-no-magic-underscore-to-dash-replacement?noredirect=1#comment127580063_19097057)
 
+In sum I already wasted several hours because of this strange "feature".
+
 # No TemplateLiterals (like in JS)
 
 ...
