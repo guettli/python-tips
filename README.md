@@ -504,7 +504,7 @@ https://pluggy.readthedocs.io/en/latest/
 
 If unsure take pip. If you need more take pip-tools.
 
-[Why not Poetry](https://twitter.com/codewithanthony/status/1575877600563822594?t=7m0LgXOkECJ8T_sXDKlECg&s=19)
+[Why Anthony Sottile does not use Python-Poetry](https://twitter.com/codewithanthony/status/1575877600563822594?t=7m0LgXOkECJ8T_sXDKlECg&s=19)
 
 # Using Python versions, which are not available for your operating system
 
