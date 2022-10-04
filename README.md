@@ -506,6 +506,9 @@ If unsure take setup.cfg and pip. If you need more take pip-tools.
 
 [Why Anthony Sottile does not use Python-Poetry](https://twitter.com/codewithanthony/status/1575877600563822594?t=7m0LgXOkECJ8T_sXDKlECg&s=19)
 
+# Create setup.cfg from setup.py
+
+[upgrade a setup.py to declarative metadata](https://github.com/asottile/setup-py-upgrade)
 
 # Using Python versions, which are not available for your operating system
 
