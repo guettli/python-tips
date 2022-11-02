@@ -555,6 +555,14 @@ my_random.seed(...)
 
 This way, you don't rely on global state.
 
+# Show dependencies
+
+It is sad, or even hurts. You can't see the dependencies of a pypi package. See [Why PyPI Doesn't Know Your Projects Dependencies](https://dustingram.com/articles/2018/03/05/why-pypi-doesnt-know-dependencies/).
+
+But you can list the dependencies after installing it with [pipdeptree](https://pypi.org/project/pipdeptree/).
+
+
+
 # Related
 
 * [Güttli's opinionated Programming Guidelines](https://github.com/guettli/programming-guidelines)
