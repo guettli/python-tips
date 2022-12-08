@@ -261,6 +261,38 @@ for daily development. I want a fast edit/test loop.
 See "How do you develop for the cloud?" in [Python Developer Survey](https://www.jetbrains.com/lp/python-developers-survey-2020/): Most
 people develop locally with virtualenv.
 
+# direnv
+
+[direnv](https://direnv.net/) sets environment variables as soon as you enter a directory with the terminal (`cd my-dir`).
+
+I use it to activate the venv without calling `. bin/activate`.
+
+Example:
+
+```
+> mkdir my-new-project
+> cd my-new-project
+> python3 -m venv venv
+> open .envrc
+```
+
+Enter this into your `.envrc`:
+
+```
+export PATH=$PWD/venv/bin:$PATH
+export VIRTUAL_ENV=$PWD/venv
+```
+
+You need to allow the new config once:
+
+```
+> direnv allow
+```
+
+The environment variables get unloaded if you leave the directory, and activated again as soon
+as you enter the directory.
+
+
 # pre-commit.com
 
 [reorder_python_imports](https://github.com/asottile/reorder_python_imports) (instead of isort)
