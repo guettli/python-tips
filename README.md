@@ -292,6 +292,7 @@ You need to allow the new config once:
 The environment variables get unloaded if you leave the directory, and activated again as soon
 as you enter the directory.
 
+If you use vscode, I recommend: [vscode Direnv Extension](https://marketplace.visualstudio.com/items?itemName=mkhl.direnv)
 
 # pre-commit.com
 
